@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="he" dir="rtl" className="bg-primary">
-      <body className="debug-screens">
+      <body>
         <Navbar />
         {children}
       </body>

@@ -14,7 +14,7 @@ import Rocket from "/public/images/Rocket.svg";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col items-center justify-between py-2">
+    <main className="relative flex flex-col items-center justify-between py-2 md:py-10">
       {/* hero */}
       <div className="flex flex-row md:justify-end">
         {/* left */}
