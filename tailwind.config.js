@@ -7,12 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        'calibribold': ['calibribold', 'sans-serif'],
+        'calibriitalic': ['calibriitalic', 'sans-serif'],
+        'calibrilight': ['calibrilight', 'sans-serif'],
+        'calibriregular': ['calibriregular', 'sans-serif'],
       },
+      backgroundColor: {
+        'primary': '#2B2B2B'
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-debug-screens'),
+  ],
 }

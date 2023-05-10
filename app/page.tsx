@@ -1,113 +1,233 @@
-import Image from 'next/image'
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { IoChevronBackCircleSharp, IoChevronUpCircle } from "react-icons/io5";
+
+import Rectangle from "/public/images/Rectangle.svg";
+import PhoneHand from "/public/images/PhoneHand.svg";
+import BlueLine from "/public/images/BlueLine.svg";
+import Bulb from "/public/images/Bulb.svg";
+import Pencil from "/public/images/Pencil.svg";
+import Cube from "/public/images/Cube.svg";
+import Rocket from "/public/images/Rocket.svg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <main className="relative flex flex-col items-center justify-between py-2">
+      {/* hero */}
+      <div className="flex flex-row md:justify-end">
+        {/* left */}
+        <div className="flex flex-col items-center text-right md:w-3/5 md:items-start">
+          <h1 className="text-[#5ED7FF] font-calibribold font-bold text-2xl md:text-4xl xl:text-5xl">
+            בניית אתרים מיוחדים לעסק שלך
+          </h1>
+          <h2 className="mt-2 text-lg font-bold font-calibriregular md:text-2xl xl:text-3xl">
+            עיצוב מתאים למוצרים ולשירותים שלך.
+          </h2>
+          <p className="w-3/4 mt-3 text-sm font-normal text-right font-calibriregular md:text-base xl:text-lg">
+            בימנו אתר אינטרנט הוא כלי עסק חיוני , באתר מתקיימת ההכירות הראשונית
+            עם לקוחות פוטנציאלים ונכרעת ההחלטה האם לבחור בעסק שלך או במתחרים
+            שלך. חשוב להבין שאתר האינטרנט אינו רק מטרה לחסוף את העסק ולתת מידע
+            אנפורמטיבי , אלה גם מהווה כלי שיווקי מרכזי להפניית לקויות והגדלת
+            המענקים. לכן מומלץ להשקיע באתר אינטרנט מקצועי ומשכנע , שיוביל להשגת
+            יתרונות עסקיים.
+          </p>
+
+          {/* examples-buttons */}
+          <div className="flex flex-col self-start p-5 mt-5 font-calibriregular md:flex-row md:items-center">
+            {/* button-1 */}
+            <div className="flex flex-col items-center md:p-3">
+              <h1 className="text-xl font-bold text-[#5ED7FF] xl:text-3xl">
+                חנויות אונליין
+              </h1>
+              <div className="flex flex-row items-center mt-1 md:flex-col">
+                <p className="text-sm font-light text-right md:text-center xl:text-base">
+                  למכור את המוצרים או שירותים שלך באינטרנט בקלות.
+                </p>
+                <Link href={"/"}>
+                  <IoChevronBackCircleSharp className="text-[#5ED7FF] mr-2 w-5 h-5 md:hidden" />
+                </Link>
+                <Link href={"/"}>
+                  <IoChevronUpCircle className="text-[#5ED7FF] mt-5 w-14 h-14 hidden md:block" />
+                </Link>
+              </div>
+            </div>
+
+            {/* button-2 */}
+            <div className="flex flex-col items-center mt-3 md:p-3 md:mt-0">
+              <h1 className="text-xl font-bold text-[#5ED7FF] xl:text-3xl">
+                אתרי תדמית
+              </h1>
+              <div className="flex flex-row items-center mt-1 md:flex-col">
+                <p className="text-sm font-light text-right md:text-center xl:text-base">
+                  לאפשר ללקוחות להכיר ולהתחבר לעסק שלך יותר טוב ומהר.
+                </p>
+                <Link href={"/"}>
+                  <IoChevronBackCircleSharp className="text-[#5ED7FF] mr-2 w-5 h-5 md:hidden" />
+                </Link>
+                <Link href={"/"}>
+                  <IoChevronUpCircle className="text-[#5ED7FF] mt-5 w-14 h-14 hidden md:block" />
+                </Link>
+              </div>
+            </div>
+
+            {/* button-3 */}
+            <div className="flex flex-col items-center mt-3 md:p-3 md:mt-0">
+              <h1 className="text-xl font-bold text-[#5ED7FF] xl:text-3xl">
+                עמודי נחיתה
+              </h1>
+              <div className="flex flex-row items-center mt-1 md:flex-col">
+                <p className="text-sm font-light text-right md:text-center xl:text-base">
+                  לקדם את המוצר או שירות שלך בעמוד ייעודי ומרשים.
+                </p>
+                <Link href={"/"}>
+                  <IoChevronBackCircleSharp className="text-[#5ED7FF] mr-2 w-5 h-5 md:hidden" />
+                </Link>
+                <Link href={"/"}>
+                  <IoChevronUpCircle className="text-[#5ED7FF] mt-5 w-14 h-14 hidden md:block" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* right */}
+        <div className="hidden w-fit h-fit md:block">
+          {/* rectangle */}
+          <div className="absolute w-[300px] h-[600px] right-0 -top-28 xl:w-[400px] xl:h-[700px] xl:right-10 2xl:right-36">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src={Rectangle}
+              alt="Rectangle"
+              fill
+              style={{ objectFit: "contain" }}
             />
-          </a>
+          </div>
+          {/* phone-hand */}
+          <div className="absolute w-[250px] h-[650px] right-10 top-[-130px] xl:w-[400px] xl:h-[700px] xl:top-[-158px] xl:right-28 2xl:right-52">
+            <Image
+              src={PhoneHand}
+              alt="PhoneHand"
+              fill
+              style={{ objectFit: "contain" }}
+            />
+          </div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      {/* work */}
+      <div className="flex flex-col items-center w-full mt-10 md:mt-28">
+        <h1 className="text-2xl font-bold font-calibribold md:text-4xl">
+          תהליך עבודה
+        </h1>
+        <div className="relative w-1/2 h-7 md:w-1/4">
+          <Image
+            src={BlueLine}
+            alt="BlueLine"
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        {/* work-desc */}
+        <div className="grid grid-cols-1 p-5 md:grid-cols-2 md:grid-rows-2 md:justify-items-center">
+          <div className="flex flex-col items-center mt-3 md:mt-8">
+            <div className="relative w-20 h-20 md:w-40 md:h-40">
+              <Image
+                src={Bulb}
+                alt="Bulb"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            <h1 className="mt-3 text-xl font-bold font-calibribold md:text-2xl xl:text-3xl">
+              איפיון
+            </h1>
+            <p className="mt-3 text-xs text-right font-calibriregular md:text-center md:text-base xl:text-lg">
+              הכרות עם העסק, קביעת מטרות ויעדים, מחקר על הקהל היעד ויצירת סקיצות
+              ראשוניות לאתר.
+            </p>
+          </div>
+          <div className="flex flex-col items-center mt-8">
+            <div className="relative w-20 h-20 md:w-40 md:h-40">
+              <Image
+                src={Pencil}
+                alt="Pencil"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            <h1 className="mt-3 text-xl font-bold font-calibribold md:text-2xl xl:text-3xl">
+              עיצוב
+            </h1>
+            <p className="mt-3 text-xs text-right font-calibriregular md:text-center md:text-base xl:text-lg">
+              התאמת עיצוב גרפי על פי האיפיון והסקיצות הכולל בחירת פונטים, צבעים
+              וקונספט לאתר.
+            </p>
+          </div>
+          <div className="flex flex-col items-center mt-8 md:mt-16">
+            <div className="relative w-20 h-20 md:w-40 md:h-40">
+              <Image
+                src={Cube}
+                alt="Cube"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            <h1 className="mt-3 text-xl font-bold font-calibribold md:text-2xl xl:text-3xl">
+              פיתוח
+            </h1>
+            <p className="mt-3 text-xs text-right font-calibriregular md:text-center md:text-base xl:text-lg">
+              פיתוח האתר על פלטפורמת NEXT.JS תוך התאמתו למערכת לפי האיפיון
+              והעיצוב וכמובן דרישת הלקוח.
+            </p>
+          </div>
+          <div className="flex flex-col items-center mt-8 md:mt-16">
+            <div className="relative w-20 h-20 md:w-40 md:h-40">
+              <Image
+                src={Rocket}
+                alt="Rocket"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            <h1 className="mt-3 text-xl font-bold font-calibribold md:text-2xl xl:text-3xl">
+              העלאה לרשת
+            </h1>
+            <p className="mt-3 text-xs text-right font-calibriregular md:text-center md:text-base xl:text-lg">
+              לאחר בדיקות אחרונות ואישור הלקוח מעלים את האתר המוכן לאינטרנט
+              שיחשף לעיני כולם.
+            </p>
+          </div>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        {/* price */}
+        <div className="flex flex-col items-center justify-center w-full h-full p-5 mt-5 bg-gradient-to-b from-transparent via-transparent to-blue-500">
+          <h1 className="text-2xl font-bold font-calibribold">
+            מעוניין בהצעת מחיר לבניית אתר?
+          </h1>
+          <div className="flex flex-col items-center justify-center w-1/3 mt-5 md:flex-row md:w-3/4 xl:w-full xl:justify-evenly">
+            <div className="p-3">
+              <input className="rounded-md xl:w-64 xl:h-10" placeholder="שם" />
+            </div>
+            <div className="p-3">
+              <input
+                className="rounded-md xl:w-64 xl:h-10"
+                placeholder="מספר"
+              />
+            </div>
+            <div className="p-3">
+              <input
+                className="rounded-md xl:w-64 xl:h-10"
+                placeholder="אימייל"
+              />
+            </div>
+          </div>
+          <button className="w-40 h-10 border-solid rounded-md bg-[#5ED7FF] mt-5 md:w-60">
+            שליחת פרטים
+          </button>
+        </div>
       </div>
     </main>
-  )
+  );
 }

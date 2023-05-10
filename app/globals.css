@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'calibribold_italic';
+  src: url('../public/fonts/calibri_bold_italic-webfont.woff2') format('woff2'),
+       url('../public/fonts/calibri_bold_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: 'calibribold';
+  src: url('../public/fonts/calibri_bold-webfont.woff2') format('woff2'),
+       url('../public/fonts/calibri_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'calibriitalic';
+  src: url('../public/fonts/calibri_italic-webfont.woff2') format('woff2'),
+       url('../public/fonts/calibri_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'calibrilight_italic';
+  src: url('../public/fonts/calibri_light_italic-webfont.woff2') format('woff2'),
+       url('../public/fonts/calibri_light_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'calibrilight';
+  src: url('../public/fonts/calibri_light-webfont.woff2') format('woff2'),
+       url('../public/fonts/calibri_light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'calibriregular';
+  src: url('../public/fonts/calibri_regular-webfont.woff2') format('woff2'),
+       url('../public/fonts/calibri_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
