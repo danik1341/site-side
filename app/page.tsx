@@ -14,18 +14,18 @@ import Rocket from "/public/images/Rocket.svg";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col items-center justify-between py-2 md:py-10">
+    <main className="relative flex flex-col items-center justify-between py-2 md:py-10 2xl:items-end">
       {/* hero */}
-      <div className="flex flex-row md:justify-end">
+      <div className="flex flex-row w-3/4 md:justify-end">
         {/* left */}
-        <div className="flex flex-col items-center text-right md:w-3/5 md:items-start">
-          <h1 className="text-[#5ED7FF] font-calibribold font-bold text-2xl md:text-4xl xl:text-5xl">
+        <div className="flex flex-col items-center px-5 text-right ld:px-10 md:w-3/5 md:items-start 2xl:w-3/4">
+          <h1 className="text-[#5ED7FF] font-calibribold font-bold text-2xl md:text-4xl xl:text-5xl 2xl:text-8xl">
             בניית אתרים מיוחדים לעסק שלך
           </h1>
-          <h2 className="mt-2 text-lg font-bold font-calibriregular md:text-2xl xl:text-3xl">
+          <h2 className="mt-2 text-lg font-bold font-calibriregular md:text-2xl xl:text-3xl 2xl:text-6xl">
             עיצוב מתאים למוצרים ולשירותים שלך.
           </h2>
-          <p className="w-3/4 mt-3 text-sm font-normal text-right font-calibriregular md:text-base xl:text-lg">
+          <p className="w-3/4 mt-3 text-sm font-normal text-right font-calibriregular md:text-base xl:text-lg 2xl:text-4xl">
             בימנו אתר אינטרנט הוא כלי עסק חיוני , באתר מתקיימת ההכירות הראשונית
             עם לקוחות פוטנציאלים ונכרעת ההחלטה האם לבחור בעסק שלך או במתחרים
             שלך. חשוב להבין שאתר האינטרנט אינו רק מטרה לחסוף את העסק ולתת מידע
@@ -35,57 +35,57 @@ export default function Home() {
           </p>
 
           {/* examples-buttons */}
-          <div className="flex flex-col self-start p-5 mt-5 font-calibriregular md:flex-row md:items-center">
+          <div className="flex flex-col self-start w-full p-5 mt-5 font-calibriregular lg:flex-row lg:items-center">
             {/* button-1 */}
-            <div className="flex flex-col items-center md:p-3">
-              <h1 className="text-xl font-bold text-[#5ED7FF] xl:text-3xl">
+            <div className="flex flex-col items-center lg:w-1/3 md:p-3">
+              <h1 className="text-xl font-bold text-[#5ED7FF] xl:text-2xl text-center">
                 חנויות אונליין
               </h1>
-              <div className="flex flex-row items-center mt-1 md:flex-col">
-                <p className="text-sm font-light text-right md:text-center xl:text-base">
+              <div className="flex flex-row items-center mt-1 lg:flex-col">
+                <p className="text-sm font-light text-right lg:text-center xl:text-base">
                   למכור את המוצרים או שירותים שלך באינטרנט בקלות.
                 </p>
                 <Link href={"/"}>
-                  <IoChevronBackCircleSharp className="text-[#5ED7FF] mr-2 w-5 h-5 md:hidden" />
+                  <IoChevronBackCircleSharp className="text-[#5ED7FF] mr-2 w-5 h-5 lg:hidden" />
                 </Link>
                 <Link href={"/"}>
-                  <IoChevronUpCircle className="text-[#5ED7FF] mt-5 w-14 h-14 hidden md:block" />
+                  <IoChevronUpCircle className="text-[#5ED7FF] mt-5 w-14 h-14 hidden lg:block" />
                 </Link>
               </div>
             </div>
 
             {/* button-2 */}
-            <div className="flex flex-col items-center mt-3 md:p-3 md:mt-0">
-              <h1 className="text-xl font-bold text-[#5ED7FF] xl:text-3xl">
+            <div className="flex flex-col items-center mt-3 md:p-3 md:mt-0 lg:w-1/3">
+              <h1 className="text-xl font-bold text-[#5ED7FF] xl:text-2xl text-center">
                 אתרי תדמית
               </h1>
-              <div className="flex flex-row items-center mt-1 md:flex-col">
-                <p className="text-sm font-light text-right md:text-center xl:text-base">
+              <div className="flex flex-row items-center mt-1 lg:flex-col">
+                <p className="text-sm font-light text-right lg:text-center xl:text-base">
                   לאפשר ללקוחות להכיר ולהתחבר לעסק שלך יותר טוב ומהר.
                 </p>
                 <Link href={"/"}>
-                  <IoChevronBackCircleSharp className="text-[#5ED7FF] mr-2 w-5 h-5 md:hidden" />
+                  <IoChevronBackCircleSharp className="text-[#5ED7FF] mr-2 w-5 h-5 lg:hidden" />
                 </Link>
                 <Link href={"/"}>
-                  <IoChevronUpCircle className="text-[#5ED7FF] mt-5 w-14 h-14 hidden md:block" />
+                  <IoChevronUpCircle className="text-[#5ED7FF] mt-5 w-14 h-14 hidden lg:block" />
                 </Link>
               </div>
             </div>
 
             {/* button-3 */}
-            <div className="flex flex-col items-center mt-3 md:p-3 md:mt-0">
-              <h1 className="text-xl font-bold text-[#5ED7FF] xl:text-3xl">
+            <div className="flex flex-col items-center mt-3 md:p-3 md:mt-0 lg:w-1/3">
+              <h1 className="text-xl font-bold text-[#5ED7FF] xl:text-2xl text-center">
                 עמודי נחיתה
               </h1>
-              <div className="flex flex-row items-center mt-1 md:flex-col">
-                <p className="text-sm font-light text-right md:text-center xl:text-base">
+              <div className="flex flex-row items-center mt-1 lg:flex-col">
+                <p className="text-sm font-light text-right lg:text-center xl:text-base">
                   לקדם את המוצר או שירות שלך בעמוד ייעודי ומרשים.
                 </p>
                 <Link href={"/"}>
-                  <IoChevronBackCircleSharp className="text-[#5ED7FF] mr-2 w-5 h-5 md:hidden" />
+                  <IoChevronBackCircleSharp className="text-[#5ED7FF] mr-2 w-5 h-5 lg:hidden" />
                 </Link>
                 <Link href={"/"}>
-                  <IoChevronUpCircle className="text-[#5ED7FF] mt-5 w-14 h-14 hidden md:block" />
+                  <IoChevronUpCircle className="text-[#5ED7FF] mt-5 w-14 h-14 hidden lg:block" />
                 </Link>
               </div>
             </div>
